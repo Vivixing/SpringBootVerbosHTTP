@@ -19,7 +19,7 @@ El método DELETE se utiliza para solicitar la eliminación de un recurso espec�
 
 - **PATCH**
 
-  El método PATCH se utiliza para realizar modificaciones parciales a un recurso existente en el servidor, es decir, el cliente envía al servidor solo los datos que deben ser modificados, el servidor procesa esta solicitud y realiza las modificaciones correspondientes al recurso.
+El método PATCH se utiliza para realizar modificaciones parciales a un recurso existente en el servidor, es decir, el cliente envía al servidor solo los datos que deben ser modificados, el servidor procesa esta solicitud y realiza las modificaciones correspondientes al recurso.
 
 - **PUT**
 
