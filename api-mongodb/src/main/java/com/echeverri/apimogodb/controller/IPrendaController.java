@@ -23,6 +23,6 @@ public interface IPrendaController {
 	
 	public ResponseEntity<?> existById(String id);
 	
-	public HttpHeaders optionsPrenda();
+	public String optionsPrenda();
 
 }
