@@ -21,7 +21,7 @@ public interface IPrendaController {
 	
 	public Prenda patch(String id, Prenda prenda);
 	
-	public ResponseEntity<?> existById(String id);
+	public HttpHeaders header();
 	
 	public HttpHeaders optionsPrenda();
 
