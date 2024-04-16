@@ -142,10 +142,10 @@ public class PrendaService implements IPrendaService{
 		return prendaRepository.existsById(id);
 	}
 
-	public HttpHeaders optionsPrenda() {
-		HttpHeaders httpHeaders = new HttpHeaders();
-		httpHeaders.add("Allow", "GET, POST, DELETE, PATCH, PUT, HEAD, OPTIONS");
-		httpHeaders.add("Access-Control-Allow-Methods", "GET, POST, DELETE, PATCH, PUT, HEAD, OPTIONS");
-		return httpHeaders;
+	public String optionsPrenda() {
+	    StringBuilder responseBuilder = new StringBuilder();
+	    responseBuilder.append("Allow: GET, POST, DELETE, PATCH, PUT, HEAD, OPTIONS\n");
+	    responseBuilder.append("Access-Control-Allow-Methods: GET, POST, DELETE, PATCH, PUT, HEAD, OPTIONS");
+	    return responseBuilder.toString();
 	}
 }
