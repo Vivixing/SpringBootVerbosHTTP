@@ -134,12 +134,10 @@ public class PrendaService implements IPrendaService{
 		prendaRepository.deleteById(id);
 	}
 
-	public boolean existById(String id) {
-		Optional<Prenda> prendaOptional = prendaRepository.findById(id);
-		if(!prendaOptional.isPresent()) {
-			throw new NoSuchElementException("No existe ninguna prenda con ese id: " + id);
-		}
-		return prendaRepository.existsById(id);
+	public HttpHeaders header() {
+		HttpHeaders httpHeaders = new HttpHeaders();
+		httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+		return httpHeaders;
 	}
 
 	public HttpHeaders optionsPrenda() {
