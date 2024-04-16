@@ -60,8 +60,8 @@ public class PrendaController implements IPrendaController {
 	}
 
 	@RequestMapping(path="/prenda/{id}", method = RequestMethod.HEAD)
-	public ResponseEntity<?> existById(@PathVariable String id) {
-		return prendaService.existById(id) ? new ResponseEntity(HttpStatus.OK):new ResponseEntity(HttpStatus.NOT_FOUND);
+	public HttpHeaders header() {
+		return prendaService.header();
 	}
 
 	@RequestMapping(path="/prenda", method = RequestMethod.OPTIONS)
