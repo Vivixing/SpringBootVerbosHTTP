@@ -22,7 +22,7 @@ public interface IPrendaService {
 	
 	public void deleteById (String id);
 	
-	public boolean existById(String id);
+	public HttpHeaders header();
 	
 	public HttpHeaders optionsPrenda();
 }
