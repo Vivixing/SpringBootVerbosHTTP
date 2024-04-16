@@ -24,5 +24,5 @@ public interface IPrendaService {
 	
 	public boolean existById(String id);
 	
-	public String optionsPrenda();
+	public HttpHeaders optionsPrenda();
 }
