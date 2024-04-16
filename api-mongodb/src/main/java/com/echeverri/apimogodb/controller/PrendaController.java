@@ -65,7 +65,7 @@ public class PrendaController implements IPrendaController {
 	}
 
 	@RequestMapping(path="/prenda", method = RequestMethod.OPTIONS)
-	public HttpHeaders optionsPrenda() {
+	public String optionsPrenda() {
 		return prendaService.optionsPrenda();
 	}
 	
